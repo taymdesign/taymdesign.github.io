@@ -87,7 +87,7 @@ footer ul.nv{list-style:none;margin:0;padding:0;display:grid;gap:8px}
 .ctl button:hover{background:var(--red);color:#fff}
 .rv{opacity:0;transform:translateY(18px);transition:opacity .6s,transform .6s}
 .rv.on{opacity:1;transform:none}
-@media (max-width:760px){.about,.fgrid{grid-template-columns:1fr}.hero::after{background:linear-gradient(180deg,rgba(25,10,10,.35),rgba(25,10,10,.8))}.hero{min-height:480px;align-items:flex-end}.hero>img{object-position:70% 20%}.pill{margin-top:56px}}
+@media (max-width:760px){.about,.fgrid{grid-template-columns:1fr}.hero::after{background:linear-gradient(180deg,rgba(25,10,10,.35),rgba(25,10,10,.8))}.hero{min-height:480px;align-items:flex-end}.hero:not(.sub)>img{object-position:96% 8%}.hero:not(.sub) .in{text-align:center;margin:0 auto;padding-left:24px;padding-right:24px}.hero:not(.sub) .in p{margin-left:auto;margin-right:auto}.about>div{text-align:center}.about p{margin-left:auto;margin-right:auto}.pill{margin-top:56px}}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.track{animation:none}.logos{overflow-x:auto}.rv{opacity:1;transform:none;transition:none}.btn{transition:none}}
 
 .shell{max-width:920px;margin:20px auto 0;padding:0 16px}
@@ -149,6 +149,55 @@ html{scroll-padding-top:100px}
 .fig-grid.g2 img,.fig-grid.g3 img{aspect-ratio:4/3;object-fit:cover}
 .fig-grid.g1 img{aspect-ratio:auto}
 @media (max-width:620px){.ppage{padding:28px 18px 24px;border-radius:22px}.fig-grid.g3{grid-template-columns:1fr 1fr}.fig-grid.n3{grid-template-columns:1fr}.fig-grid.g1{max-width:100%}}
+.phones{display:flex;justify-content:center;gap:14px;margin:6px 0 4px}
+.phones figure{flex:0 1 var(--w,210px);margin:0}
+.phones img{width:100%;height:auto;border-radius:12px;display:block;box-shadow:0 6px 18px rgba(0,18,25,.12)}
+@media (max-width:620px){.phones{flex-wrap:wrap}.phones figure{flex:0 1 calc(50% - 10px)}}
+h4{font:600 19px/1.3 Georgia,"Times New Roman",serif;margin:26px 0 8px}
+h3 a{color:inherit;text-decoration:underline;text-decoration-color:var(--orange,#EE9B00);text-underline-offset:5px;text-decoration-thickness:2px}
+h3 a:hover,h3 a:focus-visible{color:var(--accent)}
+.cw{margin:0 0 26px}.cw .car-track img{aspect-ratio:4/5}
+.car-dots{display:flex;justify-content:center;gap:7px;margin:12px 0 0;flex-wrap:wrap}
+.car-dots button{width:8px;height:8px;padding:0;border:0;border-radius:50%;background:var(--line,#d9cfc0);cursor:pointer}
+.car-dots button.on{background:var(--red,#9B2226)}
+.reels{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:14px 0 18px}
+.reels .vid{aspect-ratio:9/16;margin:0}
+@media (max-width:620px){.reels{grid-template-columns:1fr}}
+.meta{display:grid;grid-template-columns:1fr minmax(120px,190px);gap:34px;margin:6px 0 26px}
+.meta .lb{display:block;font:400 12px/1 Raleway,system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;padding:0 0 12px;border-bottom:2px solid #E8B4B4;margin-bottom:14px}
+.meta p{margin:0;font-size:14px}
+.meta>div:first-child p{font:400 clamp(19px,2.4vw,25px)/1.3 Georgia,serif}
+@media (max-width:620px){.meta{grid-template-columns:1fr;gap:20px}}
+.mos{display:grid;gap:10px;margin:14px 0 18px}
+.mos figure{min-width:0;min-height:0}.mos img{width:100%;height:100%;object-fit:cover;border-radius:12px;display:block}
+.mos-plena{grid-template-columns:repeat(6,minmax(0,1fr))}
+.mos-plena figure:nth-child(1),.mos-plena figure:nth-child(2),.mos-plena figure:nth-child(6),.mos-plena figure:nth-child(7){grid-column:span 3;aspect-ratio:3/2}
+.mos-plena figure:nth-child(3){grid-column:span 4;grid-row:span 2}
+.mos-plena figure:nth-child(4),.mos-plena figure:nth-child(5){grid-column:span 2;aspect-ratio:1/1}
+.mos-potato{grid-template-columns:repeat(3,minmax(0,1fr))}
+.mos-potato figure:nth-child(1){grid-row:span 2}
+.mos-potato figure:nth-child(2),.mos-potato figure:nth-child(3){aspect-ratio:1/1}
+.mos-potato figure:nth-child(4),.mos-potato figure:nth-child(5){aspect-ratio:1.55/1}
+.pj-plena .fig-grid.g2 img{aspect-ratio:1/1}
+.pj-plena .fig-grid.g1{max-width:100%}
+.pj-potato-house .pq{border:0;padding:0;margin:22px 0 8px;font:400 15px/1.75 Raleway,system-ui,sans-serif}
+.pj-potato-house .pq::before{content:"\201C";display:block;font:400 76px/.7 Georgia,serif;color:var(--mint,#94D2BD);margin:0 0 14px}
+.pj-potato-house .pq .hl{font-weight:600}
+.ppage.pj-hash{background:#191E29;color:#E9EDF2}
+.pj-hash h1{color:#fff}.pj-hash .sub{color:#DB2183}
+.pj-hash .pill,.pj-hash .ps h2{border-color:#DB2183;color:#fff}
+.pj-hash .ps p,.pj-hash .ps li{color:#E9EDF2}
+.pj-hash .hl{color:#01C380}
+.pj-hash .pl{list-style:none;padding:0}.pj-hash .pl li{margin:0 0 14px}.pj-hash .pl .hl{color:#DB2183}
+.pj-hash .pq{border:0;padding:0;text-align:center;font:400 clamp(19px,2.6vw,26px)/1.4 Raleway,system-ui,sans-serif;color:#fff;margin:6px 0 10px}
+.pj-hash .ps .pq .hl{color:#DB2183;font-weight:400}
+.pj-hash .ps p.ctr .hl{color:#DB2183}
+.pj-hash .fig-grid.g3{grid-template-columns:1fr 1fr}
+.pj-hash .fig-grid.g3 img,.pj-hash .fig-grid.g2 img{aspect-ratio:3/2}
+.pj-hash .fig-grid.g3 figure:last-child:nth-child(odd){grid-column:1/-1;justify-self:center;width:60%}
+.pj-hash .fig-grid.g1{max-width:100%}
+.pj-hash .cred,.pj-hash .pfoot{color:#cbd2da}
+
 .car{position:relative}
 .car-track{display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;-webkit-overflow-scrolling:touch}
 .car-track::-webkit-scrollbar{display:none}
@@ -177,7 +226,7 @@ video{max-width:100%;max-height:80vh;width:auto;margin:0 auto;border-radius:12px
 .pfoot a{text-decoration:none;color:var(--muted)}
 .pfoot a:hover{text-decoration:underline}
 .pfoot .cta2{color:var(--accent);font-weight:600;text-transform:uppercase;letter-spacing:.02em}
-</style></head><body id="top"><a class="skip" href="#conteudo">Ir para o conteúdo</a><header class="nav"><nav aria-label="Principal"><a href="../index.html">Home</a><a href="../sobre.html">Sobre</a><a href="../portfolio.html" aria-current="page">Portfólio</a></nav></header><main id="conteudo"><div class="shell"><article class="ppage">
+</style></head><body id="top"><a class="skip" href="#conteudo">Ir para o conteúdo</a><header class="nav"><nav aria-label="Principal"><a href="../index.html">Home</a><a href="../sobre.html">Sobre</a><a href="../portfolio.html" aria-current="page">Portfólio</a></nav></header><main id="conteudo"><div class="shell"><article class="ppage pj-comercial-castro">
 <div class="ctr"><p class="pill">Identidade Visual</p></div><h1>Comercial Castro</h1><p class="sub">Loja de Materiais de Construção</p>
 <section class="ps"><p>A Comercial Castro existe há <strong class="hl">33 anos</strong> e oferece um serviço personalizado focado na <strong class="hl">experiência de compra, eficiência, simplicidade, comprometimento e relacionamento com o cliente</strong>, que chega a ser muito mais do que isso, prezando sempre pelo prazer da aquisição e acolhimento.</p><blockquote class="pq">Afinal, na Castro você tem a certeza de uma boa compra.</blockquote></section><section class="ps"><p>Para criação objetivamos uma identidade <strong class="hl">moderna, determinada</strong> e com o foco principal na <strong class="hl">conexão e transparência</strong>.</p><p>Acreditamos no conceito do projeto: <strong class="hl">“menos é mais”</strong>, por isso reunimos elementos, atributos e arquétipos que fazem a marca, aplicando seus significados com simplicidade e sabedoria, para criar uma atmosfera <strong class="hl">leve, de confiança, conectada e humana</strong>.</p></section><section class="ps"><div class="ctr"><h2>Conceito</h2></div><p>Busquei inspiração nas palavras em seus formatos, nas cores e sentimentos que desejamos que o público tenha com a marca, tudo isso para compor um <strong class="hl">símbolo único e memorável</strong>.</p><div class="fig-grid g1"><figure><img src="../imagens/comercial-castro/conceito-logotipo.webp" alt="Explicação do conceito do logotipo, usada na apresentação ao cliente" loading="lazy" data-f="https://taymorgana.com/wp-content/uploads/2025/07/Conceito-Logotipo-1024x233.png" onerror="if(this.dataset.f){this.src=this.dataset.f;this.dataset.f=''}else{this.closest('figure').hidden=true}"></figure></div></section><section class="ps"><div class="ctr"><h2>Mascote</h2></div><div class="fig-grid g1"><figure><img src="../imagens/comercial-castro/mascote-comercial-castro.webp" alt="Castrinho, o mascote da empresa" loading="lazy" data-f="https://taymorgana.com/wp-content/uploads/2025/07/Mascote-Comercial-Castro-640x1024.png" onerror="if(this.dataset.f){this.src=this.dataset.f;this.dataset.f=''}else{this.closest('figure').hidden=true}"></figure></div><p class="cred">Mascote desenvolvido pelo <a href="https://www.instagram.com/bdartlab/" target="_blank" rel="noopener">Bruno Darwich</a></p></section><section class="ps"><div class="ctr"><h2>Loja</h2></div><div class="fig-grid g1"><figure><img src="../imagens/comercial-castro/fachada-maio-22-comercial-castro.webp" alt="Fachada da Comercial Castro" loading="lazy" data-f="https://taymorgana.com/wp-content/uploads/2025/07/Fachada-Maio-22-Comercial-Castro-1024x576.jpg" onerror="if(this.dataset.f){this.src=this.dataset.f;this.dataset.f=''}else{this.closest('figure').hidden=true}"></figure></div></section><section class="ps"><div class="ctr"><h2>Aplicações</h2></div><div class="fig-grid g3"><figure><img src="../imagens/comercial-castro/mockup-outdoor-comercial-castro.webp" alt="Outdoor da Comercial Castro" loading="lazy" data-f="https://taymorgana.com/wp-content/uploads/2022/07/Mockup-Outdoor-Comercial-Castro-1024x683.png" onerror="if(this.dataset.f){this.src=this.dataset.f;this.dataset.f=''}else{this.closest('figure').hidden=true}"></figure><figure><img src="../imagens/comercial-castro/mockup-letreiro-luminoso-castro.webp" alt="Letreiro luminoso da Comercial Castro" loading="lazy" data-f="https://taymorgana.com/wp-content/uploads/2025/07/Mockup-Letreiro-Luminoso-Castro-1024x768.jpg" onerror="if(this.dataset.f){this.src=this.dataset.f;this.dataset.f=''}else{this.closest('figure').hidden=true}"></figure><figure><img src="../imagens/comercial-castro/modelo-de-sacola-v02.webp" alt="Sacola da Comercial Castro" loading="lazy" data-f="https://taymorgana.com/wp-content/uploads/2025/07/Modelo-de-Sacola-v02-1024x768.png" onerror="if(this.dataset.f){this.src=this.dataset.f;this.dataset.f=''}else{this.closest('figure').hidden=true}"></figure><figure><img src="../imagens/comercial-castro/business_card_mockup_023.webp" alt="Cartão de visita da Comercial Castro" loading="lazy" data-f="https://taymorgana.com/wp-content/uploads/2025/07/Business_Card_Mockup_023-1024x683.jpg" onerror="if(this.dataset.f){this.src=this.dataset.f;this.dataset.f=''}else{this.closest('figure').hidden=true}"></figure><figure><img src="../imagens/comercial-castro/camisa-polo-design-mockup-comercial-castro.webp" alt="Camisa polo da Comercial Castro" loading="lazy" data-f="https://taymorgana.com/wp-content/uploads/2025/07/Camisa-Polo-Design-Mockup-Comercial-Castro-1024x697.jpg" onerror="if(this.dataset.f){this.src=this.dataset.f;this.dataset.f=''}else{this.closest('figure').hidden=true}"></figure></div></section><section class="ps"><div class="ctr"><h2>Aplicação em loja</h2></div><figure><video src="../videos/comercial-castro-aplicacao-loja.mp4" controls preload="metadata" playsinline onerror="this.closest('figure').hidden=true"></video></figure></section>
 </article></div>
@@ -190,4 +239,4 @@ video{max-width:100%;max-height:80vh;width:auto;margin:0 auto;border-radius:12px
 <nav aria-label="Rodapé"><h2>Menu</h2><ul class="nv"><li><a href="../index.html">Home</a></li><li><a href="../sobre.html">Sobre</a></li><li><a href="../portfolio.html">Portfólio</a></li></ul></nav>
 </div>
 <p class="copy">Copyright © 2027 Tay Morgana Design</p>
-</footer><script>document.querySelectorAll('.car').forEach(function(c){var t=c.querySelector('.car-track');c.querySelectorAll('.car-b').forEach(function(b){b.addEventListener('click',function(){t.scrollBy({left:(b.classList.contains('n')?1:-1)*t.clientWidth*.9,behavior:matchMedia('(prefers-reduced-motion:reduce)').matches?'auto':'smooth'})})})})</script></body></html>
+</footer><script>document.querySelectorAll('.car').forEach(function(c){var t=c.querySelector('.car-track');c.querySelectorAll('.car-b').forEach(function(b){b.addEventListener('click',function(){t.scrollBy({left:(b.classList.contains('n')?1:-1)*t.clientWidth*.9,behavior:matchMedia('(prefers-reduced-motion:reduce)').matches?'auto':'smooth'})})});var f=t.children,n=f.length;if(n<2||!c.closest('.cw'))return;var dots=document.createElement('div');dots.className='car-dots';for(var i=0;i<n;i++){var b=document.createElement('button');b.type='button';b.setAttribute('aria-label','Slide '+(i+1));(function(i){b.addEventListener('click',function(){t.scrollTo({left:f[i].offsetLeft-t.offsetLeft,behavior:'smooth'})})})(i);dots.appendChild(b)}c.parentNode.appendChild(dots);var bs=dots.children;function up(){var x=0,m=1e9;for(var i=0;i<n;i++){var dd=Math.abs(f[i].offsetLeft-t.offsetLeft-t.scrollLeft);if(dd<m){m=dd;x=i}}for(var i=0;i<n;i++)bs[i].className=i==x?'on':''}t.addEventListener('scroll',up,{passive:true});up()})</script></body></html>
